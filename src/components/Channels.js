@@ -1,20 +1,18 @@
 import React from 'react'
 import styled from 'styled-components'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 export default function Channels(props) {
-
+  const {id} = useParams();
   const navigate = useNavigate()
   const desc= ()=>{
-    navigate("/channels/"+props.id)
-    console.log("i am ",props.id)
-    
+    navigate("/channels/"+props.id);
   }
   return (
     <>
-    <Box onClick={desc}>
+    <Box onClick={desc} style={(props.id===id)?{backgroundColor:"#3d4047"}:null}>
          <i className="fa-sharp fa-solid fa-hashtag"></i>
           <span>{props.title}</span>
-          <Button className='button'>
+          <Button className='button'style={(props.id===id)?{display:"block"}:null}>
           <i className="fa-solid fa-user-plus"></i>
           <i className="fa-solid fa-gear"></i>
           </Button>

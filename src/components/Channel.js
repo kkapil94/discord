@@ -1,21 +1,16 @@
 import React,{useState,useEffect} from 'react'
-
 import styled from 'styled-components'
 import db from "../firebase"
 import Channels from './Channels';
 import Workspace from './Workspace';
-export default function Channel() {
+import AddChannel from './AddChannel';
+export default function Channel(props) {
   
   const [cha,setCha]= useState();
- 
+  const [trigger,setTrigger] = useState(false);
   const addChannel = ()=>{
-    const channelName = prompt("enter the channel name");
-    if(channelName){
-    db.collection("channels").add({
-      channelName:channelName
-  })
+    setTrigger(true)
 }
-  }
   useEffect(() => {
     db.collection("channels").onSnapshot((snapshot)=>{
     let channel = snapshot.docs.map((doc)=>{
@@ -28,6 +23,7 @@ export default function Channel() {
   
   return (
     <>
+    <AddChannel trigger={trigger} close={setTrigger} />
     <Container>
         <Sidebar>
           <span className='span'></span>
@@ -60,6 +56,7 @@ export default function Channel() {
         </Ser>
               <Workspace />
     </Container>
+    
     </>
   )
 }
@@ -91,11 +88,12 @@ i{
     margin:1rem 0 1rem 0;
     padding:.8rem;
     border-radius:50%;
-    background-color:#34353c;
-    color:#d0c4c8;
+    background-color:#373d40;
+    color:#e5eaed;
     height:2rem;
+    width:2.2rem;
     &:hover{
-        border-radius:25%;
+        border-radius:35%;
         color:white;
         background-color:#5865f2;
         cursor:pointer;
@@ -108,9 +106,9 @@ i{
   height:1.9rem;
   color:#3c8e3c;
   &:hover{
-    border-radius:25%;
+    border-radius:35%;
         color:white;
-        background-color:#3c8e3c;
+        background-color:#3BA55D;
   }
 
 }
