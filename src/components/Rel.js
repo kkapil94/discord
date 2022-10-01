@@ -13,7 +13,7 @@ export default function Rel() {
             <Fo>
               <h1>Ready to start your journey?</h1>
             </Fo>
-            <Button><button className='win'><i class="fa-brands fa-windows"></i>Download for windows</button></Button>
+            <Button><button className='win'><i className="fa-brands fa-windows"></i>Download for windows</button></Button>
         </Content>
 
     </Container>

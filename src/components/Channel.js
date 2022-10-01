@@ -55,6 +55,7 @@ export default function Channel(props) {
          
         </Ser>
               <Workspace />
+              
     </Container>
     
     </>

@@ -1,10 +1,18 @@
 import React,{useEffect,useState} from 'react'
 import styled from 'styled-components'
-import { useParams } from 'react-router-dom';
-import db from '../firebase';
+import { useNavigate, useParams } from 'react-router-dom';
+import db, { auth } from '../firebase';
 export default function Workspace(props) {
     const [title,setTitle]=useState();
     const {id} = useParams();
+    const navigate = useNavigate()
+    const signOut = ()=>{
+      auth.signOut().then(
+        ()=>{
+          navigate("/");
+        }
+      )
+    }
     useEffect(() => {
         db.collection("channels").doc(id).get().then(
           (doc)=>{
@@ -31,6 +39,7 @@ export default function Workspace(props) {
           <Mess>
 
           </Mess>
+          <button onClick={signOut}>Sign out</button>
         </Workspac> 
     </>
   )
@@ -38,7 +47,16 @@ export default function Workspace(props) {
 const Workspac = styled.div`
 height:100vh;
 background-color:#34393f;
-
+& > button{
+  position: relative;
+    top: 36rem;
+    left: 61rem;
+    border: none;
+    border-radius: 20px;
+    background-color: #4c5076;
+    font-size: 1.8rem;
+    color: #ebe6e6;
+}
 `
 const Nav = styled.div`
 height:3.5rem;
