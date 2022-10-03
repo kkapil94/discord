@@ -85,14 +85,13 @@ span{
   display:none;
 }
 i{
-    font-size:1.8rem;
-    margin:1rem 0 1rem 0;
-    padding:.8rem;
-    border-radius:50%;
-    background-color:#373d40;
-    color:#e5eaed;
-    height:2rem;
-    width:2.2rem;
+  font-size: 1.4rem;
+  margin: 1rem 0 1rem 0;
+  padding: 0.7rem;
+  border-radius: 50%;
+  background-color: #373d40;
+  color: #e5eaed;
+  height: 1.5rem;
     &:hover{
         border-radius:35%;
         color:white;
@@ -102,24 +101,26 @@ i{
     
 }
 .add{
-  width:1.8rem;
-  padding-left:0.6em;
-  height:1.9rem;
-  color:#3c8e3c;
-  &:hover{
-    border-radius:35%;
+  font-size: 1.4rem;
+  margin: 1rem 0 1rem 0;
+  padding: 0.8rem;
+  border-radius: 50%;
+  background-color: #373d40;
+  color: #e5eaed;
+    &:hover{
+        border-radius:35%;
         color:white;
-        background-color:#3BA55D;
-  }
-
+        background-color:#5865f2;
+        cursor:pointer;
+    }
 }
 img{
     margin:.5rem 0 .5rem 0;
     border-radius:50%;
     background-color:#34353c;
     color:#d0c4c8;
-    height:3.3rem;
-    width:3.5rem;
+    height:3rem;
+    width:3rem;
     &:hover{
       cursor:pointer;
     }
@@ -133,17 +134,17 @@ box-shadow:2rem 0 grey;
 const Head = styled.div`
 display:flex;
 align-items:center;
-height:3.5em;
+height:2.9em;
 box-shadow:0 1px 2px #252222;
 img{
   height:1rem;
   width:1rem;
-  margin-left:9.5em;
+  margin-left:8em;
 }
 h1{
   display: inline-block;
   color: #e4dcdc;
-  font-size: 1.2rem;
+  font-size: .9rem;
   margin-left:1rem;
 }
 &:hover{
@@ -160,7 +161,7 @@ align-items:center;
 `
 const Chan = styled.div`
 margin-top:.8em;
-font-size:0.9rem;
+font-size:0.8rem;
 font-weight:800;
 color:grey;
 text-transform:uppercase;
@@ -171,8 +172,8 @@ align-items:center;
   margin:1px .5rem 0 -1rem;
 }
 .add{
-  margin-left:7rem;
-  font-size:1.8rem;
+  margin-left:5.3rem;
+  font-size:1.5rem;
   &:hover{
     color:#d4d7d7;
   }

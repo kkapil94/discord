@@ -49,8 +49,8 @@ height:100vh;
 background-color:#34393f;
 & > button{
   position: relative;
-    top: 36rem;
-    left: 61rem;
+    top: 28rem;
+    left: 50rem;
     border: none;
     border-radius: 20px;
     background-color: #4c5076;
@@ -59,13 +59,13 @@ background-color:#34393f;
 }
 `
 const Nav = styled.div`
-height:3.5rem;
+height:2.9rem;
 box-shadow:0 1px 3px #252222;
 display:flex;
 align-items:center;
 justify-content:space-between;
-font-size:1.3rem;
-font-weight:800;
+font-size:1.1rem;
+font-weight:600;
 color:white;
 span{
   cursor:arrow;
@@ -73,7 +73,7 @@ span{
 span i{
   color:grey;
   margin:0 1rem 0 1rem;
-  font-size:1.6rem;
+  font-size:1.2rem;
   font-weight:100;
 }
 .fa-thumbtack{
@@ -91,7 +91,7 @@ i:hover{
 }
 &>i{
 margin-left:1rem;
-font-size:1.5rem;
+font-size:1.2rem;
 i{
   font-size:0.8rem;
   position:relative;
@@ -102,8 +102,8 @@ i{
 input{
   background-color:#201e1e;
   margin-left:1rem;
-  height:1.8rem;
-  width:12rem;
+  height:1.5rem;
+  width:10rem;
   border:none;
   border-radius:5px;
   font-size:1rem;

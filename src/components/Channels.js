@@ -21,16 +21,16 @@ export default function Channels(props) {
   )
 }
 const Box=styled.div`
-height:2.4rem;
+height:2.1rem;
 width:95%;
 background-color:#30323b;
 border-radius:5px;
 display:flex;
 align-items:center;
 color:#e4dcdc;
-margin-bottom:0.3rem;
+position:relative;
 span{
-  font-size:1.2em;
+  font-size:1em;
 }
 & > i{
   margin:0 .5em 0 .5rem;
@@ -47,7 +47,7 @@ span{
 `
 const Button = styled.div`
 position: absolute;
-left: 20rem;
+left: 11rem;
 color: #949a9d;
 display:none;
 i{

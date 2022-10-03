@@ -17,17 +17,17 @@ const Container = styled.div`
 display:flex;
 flex-direction:column;
 align-items:center;
-padding:5rem 20rem;
+padding:5rem 10rem;
 text-align:center;
 margin-top:-1rem;
 color:white;
 h1{
-    font-size:4rem;
+    font-size:3rem;
     font-family: 'Paytone One', sans-serif;
 }
 span{
     margin:-1rem;
-    font-size:20px;
+    font-size:1.3rem;
     line-height:2rem;
 }
 `

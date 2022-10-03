@@ -7,9 +7,14 @@ import Just from "./Just"
 import Coach from "./Coach"
 import Rel from './Rel'
 import Footer from './Footer'
+import { auth} from '../firebase'
+import { useAuthState } from 'react-firebase-hooks/auth';
+import { useNavigate } from 'react-router-dom'
 export default function Home() {
-   
+  const [user] = useAuthState(auth);
+  const navigate = useNavigate()
   return (<>
+  {/* {!user && navigate("/")} */}
   <Hom>
     <Container>
         <Header/>

@@ -2,19 +2,21 @@ import React from 'react'
 import styled from "styled-components"
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { auth,provider } from '../firebase'
-import { useNavigate } from 'react-router-dom';
+import { useNavigate,Navigate } from 'react-router-dom';
 export default function Header() {
   const [user] = useAuthState(auth);
   const navigate = useNavigate();
   const signIn = (e)=>{
     e.preventDefault()
       auth.signInWithPopup(provider)
-      .then(()=>navigate("/channels") )
+      .then(
+        ()=>navigate("/channels") )
       .catch((error)=>{
         alert(error.messege);
       })
   }
-  return (
+  return (<>
+    
     <Container>
         <Logo>
         <img src="../images/pngegg.png" alt="" />
@@ -34,7 +36,7 @@ export default function Header() {
         <Signin>
           <button onClick={!user?signIn:()=>navigate("/channels")}>{!user?"Login":"Open Discord"}</button>
         </Signin>
-    </Container>
+    </Container></>
   )
 }
 const Container = styled.div`
