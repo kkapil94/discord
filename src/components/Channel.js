@@ -65,7 +65,9 @@ const Container = styled.div`
 display:grid;
 grid-template-columns:0.8fr 2.5fr 10fr;
 font-family: 'Lato', sans-serif;
-
+@media(max-height:500px){
+  grid-template-columns:0.9fr 2.9fr 9fr;
+}
 `
 const Sidebar = styled.div`
 display:flex;

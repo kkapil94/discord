@@ -26,10 +26,20 @@ const Container = styled.div`
 height:100vh;
 width:100vw;
 display:grid;
-grid-template-columns:1.3fr 1fr;
+grid-template-columns:1fr 1.3fr;
 grid-gap: 0 2.5rem;
 align-items:center;
-
+@media (max-height: 500px) {
+    span{
+      h1{
+          padding:0rem 0rem;
+        font-size:1.9rem;
+      }
+      p {
+        font-size: 1.2rem;
+      }
+    }
+  }
 img{
     justify-self:end;
 }

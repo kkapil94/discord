@@ -53,13 +53,21 @@ export default function Footer() {
   )
 }
 const Container = styled.div`
-height:90vh;
+min-height:100vh;
 background-color:#23272a;
 display:grid;
 grid-template-columns:1.5fr 1fr 1fr 1fr 1fr;
 grid-template-rows:5fr 0.2fr 2fr ;
 align-items:start;
 justify-items:center;
+@media(max-height:500px){
+  ul{
+    font-size:15px;
+    li{
+      font-size:15px;
+    }
+  }
+}
 ul{
   padding:5rem 0;
   font-size:20px;
@@ -83,22 +91,32 @@ const Contact = styled.div`
 padding:3rem 4rem;
 color:#5865f2;
 h1{
-    font-size:3rem;
-    font-weight:900;
-    font-family: 'Paytone One', sans-serif;
-    letter-spacing:2px;
-    line:height:95%;
-    text-transform:uppercase;
+  font-size:3rem;
+  font-weight:900;
+  font-family: 'Paytone One', sans-serif;
+  letter-spacing:2px;
+  line:height:95%;
+  text-transform:uppercase;
 }
 span{
-    font-size:1.4rem;
-    color:#23272a;
+  font-size:1.4rem;
+  color:#23272a;
 }
 i{
   margin-right:2rem;
   font-size:1.8rem;
   color:white;
   cursor:pointer;
+}
+@media(max-height:500px){
+  padding:2rem 0 0 2rem;
+  h1{
+    font-size:2rem;
+  }
+  i{
+    font-size:1.4rem;
+    margin:0 1rem 0 0;
+  }
 }
 `
 const Separator = styled.div`

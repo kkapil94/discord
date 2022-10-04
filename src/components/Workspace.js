@@ -48,7 +48,7 @@ const Workspac = styled.div`
 height:100vh;
 background-color:#34393f;
 & > button{
-  position: relative;
+  position: fixed;
     top: 28rem;
     left: 50rem;
     border: none;

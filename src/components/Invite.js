@@ -29,6 +29,7 @@ display:grid;
 grid-template-columns:1.3fr 1fr;
 grid-gap: 0 2.5rem;
 align-items:center;
+
 img{
     justify-self:end;
 }
@@ -36,11 +37,15 @@ span{
     font-size:1.5rem;
     justify-self:center;
     padding:0 4em;
-    p{
-        color:#23272a;
+    @media (max-height:500px){
+            padding:0 2rem;
+            p{
+                font-size:1.2rem;
+            }
     }
     h1{
         font-family: 'Paytone One', sans-serif;
+        
     }
 }
 `
