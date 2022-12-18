@@ -18,12 +18,12 @@ export default function Header() {
   return (<>
     
     <Container>
-        <Logo>
+        <Logo id='logo'>
         <img src="../images/pngegg.png" alt="" />
-        <span>Discord</span>
+        <span id='navSpan'>Discord</span>
         </Logo>
         <Nav>
-          <ul>
+          <ul id='navItems'>
             <li>Download</li>
             <li>Nitro</li>
             <li>Discover</li>
@@ -33,8 +33,8 @@ export default function Header() {
             <li>Careers</li>
           </ul>
         </Nav>
-        <Signin>
-          <button onClick={!user?signIn:()=>navigate("/channels")}>{!user?"Login":"Open Discord"}</button>
+        <Signin id='loginButton'>
+          <button  onClick={!user?signIn:()=>navigate("/channels")}>{!user?"Login":"Open Discord"}</button>
         </Signin>
     </Container></>
   )

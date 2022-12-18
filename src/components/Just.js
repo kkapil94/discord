@@ -9,7 +9,7 @@ export default function Invite() {
 
   return (
     <>
-      <Container data-aos="fade-up">
+      <Container id='poster1' data-aos="fade-up">
         <span>
           <h1>Where hanging out is easy</h1>
           <p>

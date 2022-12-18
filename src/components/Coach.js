@@ -10,7 +10,7 @@ export default function Invite(){
     return(
         
         <>
-        <Container data-aos="fade-up">
+        <Container id='poster1' data-aos="fade-up">
             <img src="../images/coach.svg" alt="" />
             <span>
                 <h1>

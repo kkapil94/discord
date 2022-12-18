@@ -10,8 +10,8 @@ export default function Invite(){
     return(
         
         <>
-        <Container data-aos="fade-up">
-            <img src="../images/study.svg" alt="" />
+        <Container id='poster1' data-aos="fade-up">
+            <img  src="../images/study.svg" alt="" />
             <span>
                 <h1>
                     Create an invite-only place where you belong
@@ -46,6 +46,7 @@ span{
     h1{
         font-family: 'Paytone One', sans-serif;
         
+        font-weight:500;
     }
 }
 `

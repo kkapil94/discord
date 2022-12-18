@@ -4,7 +4,7 @@ export default function Rel() {
   return (
     <>
     <Container>
-        <Content>
+        <Content >
             <Mat>
             <h1>RELIABLE TECH FOR STAYING CLOSE</h1>
             <span>Low-latency voice and video feels like you’re in the same room. Wave hello over video, watch friends stream their games, or gather up and have a drawing session with screen share.</span>

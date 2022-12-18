@@ -48,13 +48,13 @@ const Workspac = styled.div`
 height:100vh;
 background-color:#34393f;
 & > button{
-  position: fixed;
-    top: 28rem;
-    left: 50rem;
+  position: absolute;
+    top: 89vh;
+    left: 89vw;
     border: none;
     border-radius: 20px;
     background-color: #4c5076;
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     color: #ebe6e6;
 }
 `

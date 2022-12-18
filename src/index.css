@@ -12,3 +12,54 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+@media (min-width:1327px) {
+#conText{
+  margin-top: 2rem;
+}
+}
+
+@media (min-width:1445px){
+  #conText{
+    padding: 3rem;
+  }
+}
+
+@media (min-width:1550px){
+  #conText{
+    padding:0 6rem 5rem 6rem;
+  }
+}
+
+@media (max-width:1250px){
+  #navItems li{
+    font-size: 1rem;
+    margin:0 .8rem 0 .8rem
+  }
+  #navSpan{
+    font-size: 1rem;
+    
+  }
+  #logo{
+    padding-left: 2rem;
+    margin-right:2rem;
+  }
+  #loginButton{
+    font-size: 1rem;
+    margin-right: 3rem;
+  }
+  #content h1{
+    font-size: 3rem;
+  }
+  #content span{
+    font-size:1rem
+  }
+  #poster1 img{
+    height:24rem
+  }
+   #poster1 span h1{
+      font-size:2.5rem;
+    }
+    #poster1 span p{
+      font-size:1rem;
+    }
+  }

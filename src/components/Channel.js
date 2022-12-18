@@ -62,6 +62,7 @@ export default function Channel(props) {
   )
 }
 const Container = styled.div`
+height:100vh;
 display:grid;
 grid-template-columns:0.8fr 2.5fr 10fr;
 font-family: 'Lato', sans-serif;
@@ -87,7 +88,8 @@ span{
   display:none;
 }
 i{
-  font-size: 1.4rem;
+  font-size: 1.39rem;
+  width: 1.7rem;
   margin: 1rem 0 1rem 0;
   padding: 0.7rem;
   border-radius: 50%;
@@ -103,16 +105,18 @@ i{
     
 }
 .add{
-  font-size: 1.4rem;
+  font-size: 1.39rem;
   margin: 1rem 0 1rem 0;
-  padding: 0.8rem;
+  padding: 0.7rem;
   border-radius: 50%;
   background-color: #373d40;
   color: #e5eaed;
+  width:1.3rem;
+  height: 1.3rem;
     &:hover{
         border-radius:35%;
         color:white;
-        background-color:#5865f2;
+        background-color:hsl(139, calc(var(--saturation-factor, 1) * 47.3%), 43.9%);
         cursor:pointer;
     }
 }
@@ -141,13 +145,13 @@ box-shadow:0 1px 2px #252222;
 img{
   height:1rem;
   width:1rem;
-  margin-left:8em;
 }
 h1{
   display: inline-block;
   color: #e4dcdc;
   font-size: .9rem;
   margin-left:1rem;
+  flex:0.9;
 }
 &:hover{
   background-color:#3d3f49;
@@ -169,12 +173,15 @@ color:grey;
 text-transform:uppercase;
 display:flex;
 align-items:center;
+width:83%;
 .chane{
   font-size:0.6rem;
   margin:1px .5rem 0 -1rem;
 }
+.h{
+  flex:1;
+}
 .add{
-  margin-left:5.3rem;
   font-size:1.5rem;
   &:hover{
     color:#d4d7d7;

@@ -31,6 +31,7 @@ color:#e4dcdc;
 position:relative;
 span{
   font-size:1em;
+  flex:1;
 }
 & > i{
   margin:0 .5em 0 .5rem;
@@ -46,8 +47,7 @@ span{
 }
 `
 const Button = styled.div`
-position: absolute;
-left: 11rem;
+
 color: #949a9d;
 display:none;
 i{

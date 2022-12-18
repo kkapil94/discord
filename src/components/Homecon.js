@@ -1,10 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
+import '../index.css'
 export default function Homecon() {
   return (<>
-    <Container>
+    <Container id='content'>
         <h1>IMAGINE A PLACE...</h1>
-        <span>...Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis vero quisquam, maiores accusamus a soluta fugit illum enim tempore. Illum libero vero nam earum, dolore minus nobis provident laboriosam distinctio.</span>
+        <span id='conText'>...where you can belong to a school club, a gaming group, or a worldwide art community. Where just you and a handful of friends can spend time together. A place that makes it easy to talk every day and hang out more often.</span>
     </Container>
     <Button>
       <button className='win'><i className="fa-brands fa-windows"></i> Download for windows</button>
@@ -17,17 +18,19 @@ const Container = styled.div`
 display:flex;
 flex-direction:column;
 align-items:center;
-padding:5rem 10rem;
+padding:5rem 15rem;
 text-align:center;
 margin-top:-1rem;
 color:white;
 h1{
-    font-size:3rem;
+    font-size:4rem;
     font-family: 'Paytone One', sans-serif;
-}
+    line-height:0.5rem;
+    margin:4rem 0 5rem 0;
+  }
 span{
     margin:-1rem;
-    font-size:1.3rem;
+    font-size:1.2rem;
     line-height:2rem;
 }
 `
